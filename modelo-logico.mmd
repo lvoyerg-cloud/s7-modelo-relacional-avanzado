@@ -1,0 +1,7 @@
+﻿erDiagram
+    ediciones_conferencia ||--|{ sesiones : "1 a N"
+    salas ||--o{ sesiones : "0 a N"
+    sesiones ||--|{ sesiones_ponentes : "1 a N"
+    ponentes ||--|{ sesiones_ponentes : "1 a N"
+    ediciones_conferencia ||--|{ inscripciones : "1 a N"
+    participantes ||--|{ inscripciones : "1 a N"

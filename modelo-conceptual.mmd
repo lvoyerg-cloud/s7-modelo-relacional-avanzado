@@ -1,0 +1,8 @@
+﻿erDiagram
+    CONFERENCIA ||--|{ EDICION : tiene
+    EDICION ||--|{ SESION : incluye
+    SESION ||--|{ PONENTE_SESION : asigna
+    PONENTE ||--|{ PONENTE_SESION : participa
+    SESION ||--o| SALA : ubica
+    PARTICIPANTE ||--|{ INSCRIPCION : realiza
+    EDICION ||--|{ INSCRIPCION : registra
