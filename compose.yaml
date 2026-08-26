@@ -1,0 +1,11 @@
+services:
+  postgres:
+    image: postgres:18-alpine
+    container_name: conectatech_db
+    restart: always
+    environment:
+      POSTGRES_DB: conectatech
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5433:5432"
